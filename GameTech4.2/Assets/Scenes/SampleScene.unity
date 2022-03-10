@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &623419467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+  m_PrefabInstance: {fileID: 1370792276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &623419469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623419467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1743127bdbd414180237709049f4ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 51.195, y: -224.504, z: -147.818}
 --- !u!1 &963194225
 GameObject:
@@ -293,11 +310,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.051412962, y: 0.9545432, z: -0.23809913, w: -0.17179333}
-  m_LocalPosition: {x: 1.437, y: 4.498, z: 3.562}
+  m_LocalPosition: {x: 0.973, y: 4.875, z: 4.513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1370792277}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 28.178, y: 200.138, z: -1.062}
 --- !u!1001 &1370792276
 PrefabInstance:
@@ -308,7 +325,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -355,6 +372,10 @@ PrefabInstance:
       value: model
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+    - target: {fileID: 5866666021909216657, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3ff6e672f4ce02243a18166541705e66, type: 2}
@@ -362,5 +383,20 @@ PrefabInstance:
       propertyPath: m_CullingMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'upper_arm.L'\n\tTransform 'upper_arm.R'\n\tTransform
+        'spine.001'\n\tTransform 'f_pinky.01.L'\n\tTransform 'thigh.L'\n\tTransform
+        'f_middle.03.L'\n\tTransform 'pelvis.control'\n\tTransform 'f_ring.02.R'\n\tTransform
+        'toe.L'\n\tTransform 'f_index.03.L'\n\tand more ...\n\tFrom animation clip
+        'metarig|idle'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+--- !u!4 &1370792277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7b13974941d61bf48a7e5de74e05b1e6, type: 3}
+  m_PrefabInstance: {fileID: 1370792276}
+  m_PrefabAsset: {fileID: 0}
