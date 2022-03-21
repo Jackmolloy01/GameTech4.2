@@ -18,11 +18,29 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey("w"))
         {
             anim.SetBool("isWalking", true);
-            transform.position += transform.forward * Time.deltaTime * 2;
+            //transform.position += transform.forward * Time.deltaTime * 2;
         }
         else
         {
             anim.SetBool("isWalking", false);
+        }
+
+        if (Input.GetKey("d"))
+        {
+            anim.SetBool("walkRight", true);
+        }
+        else
+        {
+            anim.SetBool("walkRight", false);
+        }
+
+        if (Input.GetKey("a"))
+        {
+            anim.SetBool("walkLeft", true);
+        }
+        else
+        {
+            anim.SetBool("walkLeft", false);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
