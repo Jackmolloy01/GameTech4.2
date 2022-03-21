@@ -18,9 +18,24 @@ public class CharacterController : MonoBehaviour
         if (Input.GetKey("w"))
         {
             anim.SetBool("isWalking", true);
-            transform.position += transform.up * Time.deltaTime * 1;
+            transform.position += transform.forward * Time.deltaTime * 2;
         }
         else
+        {
             anim.SetBool("isWalking", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            anim.SetBool("isWaving", true);
+        }
+    }
+
+    public void WavingOver(string message)
+    {
+        if (message.Equals("WaveAnimationEnded"))
+        {
+            anim.SetBool("isWaving", false);
+        }
     }
 }
