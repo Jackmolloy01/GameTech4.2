@@ -39,9 +39,19 @@ Once I was happy with the placement of the armature I used the automatic weight 
 
 ![alt text](Screenshots/weightpaint.PNG)
 
-### Character Creation
+To make animations easier I added IK solvers onto my Armature in blender. This enabled me to move the characters leg by dragging 1 bone on the characters foot, rather than individually moving the thigh, shin and feet bones. It also made sure that the knee joint could only bend the correct way.   
+
+![alt text](Screenshots/IK.PNG)
 
 ### Animation Creation
+
+I made a number of animations for this project (walkforward, walkbackwards, stafeleft, staferight, wave, kick, block)<br/><br/>
+In order to make animations I had to use the animation timeline in blender, to do this I started off at frame one and saved the characters position, I would then move down a coupld of frames and change the characters pose again and save as a keyframe. I would continue this until the character appears to be doing an action.
+
+Examples of two of my animations for walking forward and strafing left:
+![alt text](Screenshots/walk.gif)
+
+![alt text](Screenshots/strafe.gif)
 
 ### Animation State Machine
 
@@ -53,7 +63,7 @@ Once I was happy with the placement of the armature I used the automatic weight 
 
 main scene uses snap turning because continuous turning causes motion sickness.
 
-![alt text](Screenshots/walk.gif)
+
 
 
 
