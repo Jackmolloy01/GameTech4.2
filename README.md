@@ -61,15 +61,30 @@ Export the character from blender as a .fbx and import into unity. To test the m
 
 ### Animation State Machine
 
-In order to use different animations on my character at seperate times I created an animation state machine. 
+In order to use different animations on my character at seperate times I created an animation state machine.<br/><br/>
+The first state is a blend tree involving the idle and 4 walk animations. The character can transition from the walkcycle into the wave, block or kick state and then back to the walkcycle. 
 
 ![alt text](Screenshots/asm.PNG)
 
 ### Blend Tree
 
+Blend trees allow you to blend different animations together, I used a blend tree for my walk cycle involving the idle, walkforward, walkback, stafeleft and staferight animations. <br/><br/>
+The parameters I used are x and y for the direction the character is moving in.
+
+![alt text](Screenshots/blendtree1.PNG)
+
+![alt text](Screenshots/blendtree2.PNG)
+
+the image above shows what animation plays depending on the movement of the character. if the character isnt moving idle plays, if the character moves forward then walkforward animation plays. but if the character moves forward and to the left then the forward and stafeleft animations are blended together.
+
 ### Meta Channels
 
+![alt text](Screenshots/animevent.PNG)
+
 ### Ragdoll
+
+![alt text](Screenshots/ragdoll1.PNG)
+![alt text](Screenshots/ragdoll2.PNG)
 
 ### Demo
 
