@@ -24,12 +24,20 @@ The objectives of this project is to create an interactive animation demo using 
 ## Project Tasks
 ### Character Creation
 
-I created my character using MakeHuman. MakeHuman is a free open source software that enables you to customise a humanoid character. In order to do this you must select the feature on your character that you want to customise and use the slider to modify the character. MakeHuman also allows you to select what clothes you want the character to wear<br />
+I created my character using MakeHuman. MakeHuman is a free open source software that enables you to customise a humanoid character. In order to do this you must select the feature on your character that you want to customise, and use the slider to modify the character. MakeHuman also allows you to select what clothes you want the character to wear<br/><br/>
 One I finished creating my character I exported it as a .stl and imported it into blender.
 
 ![alt text](Screenshots/makehuman.PNG)
 
 ### Character Rigging
+
+The character I imported from MakeHuman was just a mesh without any bones. I used Rigify to generate a humanoid armature, and then manually scaled and moved the bones from this armature into the correct positions inside my mesh.<br/><br/>
+
+![alt text](Screenshots/armature.PNG)
+
+Once I was happy with the placement of the armature I used the automatic weight paint option in blender to attach the armature to the mesh. I then had to use the weight paint tool to correct some vertex weighting problems that occured after the automatic weight painting.
+
+![alt text](Screenshots/weightpaint.PNG)
 
 ### Character Creation
 
