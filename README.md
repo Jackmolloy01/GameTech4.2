@@ -75,13 +75,17 @@ The parameters I used are x and y for the direction the character is moving in.
 
 ![alt text](Screenshots/blendtree2.PNG)
 
-the image above shows what animation plays depending on the movement of the character. if the character isnt moving idle plays, if the character moves forward then walkforward animation plays. but if the character moves forward and to the left then the forward and stafeleft animations are blended together.
+as you can see above the characters x and y direction determines what animations are active or blended together. for example if the x and y direction are 0 then idle plays. IF the character is moving in a positive y direction the forward animation plays. but if the character moves forward and to the left the left stafe and forward animations are blended together.
 
 ### Meta Channels
+
+I used animation events to add both sound and particle effects to the character. I added an animation event every time to characters foot hit the floor in each walking animation. The event plays a sound and makes a particle effect at the characters feet everytime the character takes a step.
 
 ![alt text](Screenshots/animevent.PNG)
 
 ### Ragdoll
+
+to create a ragdoll I selected my character in the hierarchy and chose unitys in built ragdoll function. I had to input the characters armature into the ragdoll window. once the ragdoll was created I resized the colliders to fit my character and created a script to activate ragdoll on button press.
 
 ![alt text](Screenshots/ragdoll1.PNG)
 ![alt text](Screenshots/ragdoll2.PNG)
